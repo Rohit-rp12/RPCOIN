@@ -21,7 +21,6 @@ rpCoin.minePendingTransactions(myWalletAddress);     //mining reward should go t
 console.log('\nBalance of Rohit is ', rpCoin.getBalanceOfAddress(myWalletAddress));    // to check balance of my wallet
 
 rpCoin.chain[1].transactions[0].amount = 1;  // lets tamper with the data, instead of sending 100 coins we're sending only 1 coin
-
 console.log('Is chain valid?', rpCoin.isChainValid());
 
 // console.log('\n Starting the miner again...');
